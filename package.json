@@ -1,0 +1,16 @@
+{
+  "name": "eslint-examples",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
