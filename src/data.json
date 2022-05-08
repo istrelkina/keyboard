@@ -3,330 +3,330 @@
          {
             "value": "`",
             "class": "backquote",
-            "datasetVal": "backquote"
+            "datasetVal": "Backquote"
          },
          {
             "value": "1",
             "class": "",
-            "datasetVal": "1"
+            "datasetVal": "Digit1"
          },
          {
             "value": "2",
             "class": "",
-            "datasetVal": "2"
+            "datasetVal": "Digit2"
          },
          {
             "value": "3",
             "class": "",
-            "datasetVal": "3"
+            "datasetVal": "Digit3"
          },
          {
             "value": "4",
             "class": "",
-            "datasetVal": "4"
+            "datasetVal": "Digit4"
          },
          {
             "value": "5",
             "class": "",
-            "datasetVal": "5"
+            "datasetVal": "Digit5"
          },
          {
             "value": "6",
             "class": "",
-            "datasetVal": "6"
+            "datasetVal": "Digit6"
          },
          {
             "value": "7",
             "class": "",
-            "datasetVal": "7"
+            "datasetVal": "Digit7"
          },
          {
             "value": "8",
             "class": "",
-            "datasetVal": "8"
+            "datasetVal": "Digit8"
          },
          {
             "value": "9",
             "class": "",
-            "datasetVal": "9"
+            "datasetVal": "Digit9"
          },
          {
             "value": "0",
             "class": "",
-            "datasetVal": "0"
+            "datasetVal": "Digit0"
          },
          {
             "value": "-",
             "class": "",
-            "datasetVal": "minus"
+            "datasetVal": "Minus"
          },
          {
             "value": "=",
             "class": "",
-            "datasetVal": "equal"
+            "datasetVal": "Equal"
          },
          {
             "value": "BackSpace",
             "class": "backspace",
-            "datasetVal": "backspace"
+            "datasetVal": "Backspace"
          }
       ],
       "row2": [
          {
             "value": "Tab",
             "class": "tab",
-            "datasetVal": "tab"
+            "datasetVal": "Tab"
          },
          {
             "value": "Q",
             "class": "",
-            "datasetVal": "q"
+            "datasetVal": "KeyQ"
          },
          {
             "value": "W",
             "class": "",
-            "datasetVal": "w"
+            "datasetVal": "KeyW"
          },
          {
             "value": "E",
             "class": "",
-            "datasetVal": "e"
+            "datasetVal": "KeyE"
          },
          {
             "value": "R",
             "class": "",
-            "datasetVal": "r"
+            "datasetVal": "KeyR"
          },
          {
             "value": "T",
             "class": "",
-            "datasetVal": "t"
+            "datasetVal": "KeyT"
          },
          {
             "value": "Y",
             "class": "",
-            "datasetVal": "y"
+            "datasetVal": "KeyY"
          },
          {
             "value": "U",
             "class": "",
-            "datasetVal": "u"
+            "datasetVal": "KeyU"
          },
          {
             "value": "I",
             "class": "",
-            "datasetVal": "i"
+            "datasetVal": "KeyI"
          },
          {
             "value": "O",
             "class": "",
-            "datasetVal": "o"
+            "datasetVal": "KeyO"
          },
          {
             "value": "P",
             "class": "",
-            "datasetVal": "p"
+            "datasetVal": "KeyP"
          },
          {
             "value": "[",
             "class": "",
-            "datasetVal": "square-bracket-left"
+            "datasetVal": "BracketLeft"
          },
          {
             "value": "]",
             "class": "",
-            "datasetVal": "square-bracket-right"
+            "datasetVal": "BracketRight"
          },
          {
             "value": "\\",
             "class": "backslash",
-            "datasetVal": "backslash"
+            "datasetVal": "Backslash"
          },
          {
             "value": "Del",
             "class": "del",
-            "datasetVal": "del"
+            "datasetVal": "Delete"
          }
       ],
       "row3": [
          {
             "value": "CapsLock",
             "class": "capslock",
-            "datasetVal": "capslock"
+            "datasetVal": "CapsLock"
          },
          {
             "value": "A",
             "class": "",
-            "datasetVal": "a"
+            "datasetVal": "KeyA"
          },
          {
             "value": "S",
             "class": "",
-            "datasetVal": "s"
+            "datasetVal": "KeyS"
          },
          {
             "value": "D",
             "class": "",
-            "datasetVal": "d"
+            "datasetVal": "KeyD"
          },
          {
             "value": "F",
             "class": "",
-            "datasetVal": "f"
+            "datasetVal": "KeyF"
          },
          {
             "value": "G",
             "class": "",
-            "datasetVal": "g"
+            "datasetVal": "KeyG"
          },
          {
             "value": "H",
             "class": "",
-            "datasetVal": "h"
+            "datasetVal": "KeyH"
          },
          {
             "value": "J",
             "class": "",
-            "datasetVal": "j"
+            "datasetVal": "KeyJ"
          },
          {
             "value": "K",
             "class": "",
-            "datasetVal": "k"
+            "datasetVal": "KeyK"
          },
          {
             "value": "L",
             "class": "",
-            "datasetVal": "l"
+            "datasetVal": "KeyL"
          },
          {
             "value": ";",
             "class": "",
-            "datasetVal": "semicolon"
+            "datasetVal": "Semicolon"
          },
          {
             "value": "'",
             "class": "",
-            "datasetVal": "qoute"
+            "datasetVal": "Quote"
          },
          {
             "value": "Enter",
             "class": "enter",
-            "datasetVal": "enter"
+            "datasetVal": "Enter"
          }
       ],
       "row4": [
          {
             "value": "Shift",
             "class": "shift-left",
-            "datasetVal": "shift-left"
+            "datasetVal": "ShiftLeft"
          },
          {
             "value": "\\",
             "class": "",
-            "datasetVal": "backslash"
+            "datasetVal": "IntlBackslash"
          },
          {
             "value": "Z",
             "class": "",
-            "datasetVal": "z"
+            "datasetVal": "KeyZ"
          },
          {
             "value": "X",
             "class": "",
-            "datasetVal": "x"
+            "datasetVal": "KeyX"
          },
          {
             "value": "C",
             "class": "",
-            "datasetVal": "c"
+            "datasetVal": "KeyC"
          },
          {
             "value": "V",
             "class": "",
-            "datasetVal": "v"
+            "datasetVal": "KeyV"
          },
          {
             "value": "B",
             "class": "",
-            "datasetVal": "b"
+            "datasetVal": "KeyB"
          },
          {
             "value": "N",
             "class": "",
-            "datasetVal": "n"
+            "datasetVal": "KeyN"
          },
          {
             "value": "M",
             "class": "",
-            "datasetVal": "m"
+            "datasetVal": "KeyM"
          },
          {
             "value": ",",
             "class": "",
-            "datasetVal": "comma"
+            "datasetVal": "Comma"
          },
          {
             "value": ".",
             "class": "",
-            "datasetVal": "dot"
+            "datasetVal": "Period"
          },
          {
             "value": "/",
             "class": "",
-            "datasetVal": "slash"
+            "datasetVal": "Slash"
          },
          {
             "value": "",
             "class": "arrow-up",
-            "datasetVal": "arrow-up"
+            "datasetVal": "ArrowUp"
          },
          {
             "value": "Shift",
             "class": "shift-right",
-            "datasetVal": "shift-right"
+            "datasetVal": "ShiftRight"
          }
       ],
       "row5": [
          {
             "value": "Ctrl",
             "class": "ctrl",
-            "datasetVal": "ctrl-left"
+            "datasetVal": "ControlLeft"
          },
          {
             "value": "Win",
-            "class": "",
-            "datasetVal": "win"
+            "class": "win",
+            "datasetVal": "MetaLeft"
          },
          {
             "value": "Alt",
             "class": "alt",
-            "datasetVal": "alt-left"
+            "datasetVal": "AltLeft"
          },
          {
-            "value": "",
+            "value": " ",
             "class": "space",
-            "datasetVal": "space"
+            "datasetVal": "Space"
          },
          {
             "value": "Ctrl",
             "class": "ctrl",
-            "datasetVal": "ctrl"
+            "datasetVal": "ControlRight"
          },
          {
             "value": "",
             "class": "arrow-left",
-            "datasetVal": "arrow-left"
+            "datasetVal": "ArrowLeft"
          },
          {
             "value": "",
             "class": "arrow-down",
-            "datasetVal": "arrow-down"
+            "datasetVal": "ArrowDown"
          },
          {
             "value": "",
             "class": "arrow-right",
-            "datasetVal": "arrow-right"
+            "datasetVal": "ArrowRight"
          }
       ]
    }

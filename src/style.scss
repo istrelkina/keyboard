@@ -4,7 +4,6 @@ $bgdark: #697C8A;
 
 body {
    font-family: 'Roboto', sans-serif;
-
    font-weight: 500;
    width: 100%;
    height: 100vh;
@@ -13,6 +12,7 @@ body {
    align-items: center;
    justify-content: center;
    background: linear-gradient(0deg, rgba(26, 55, 75, 0.44), rgba(26, 55, 75, 0.44)), radial-gradient(50% 50% at 50% 50%, #329CF2 0%, #203F54 100%);
+   user-select: none;
 }
 
 * {
@@ -63,7 +63,12 @@ body {
       justify-content: center;
       align-items: center;
       margin: 4px;
+      cursor: pointer;
       transition: .2s;
+
+      &.active {
+         background-color: #1A2B38;
+      }
    }
 
    .backquote,
@@ -108,7 +113,21 @@ body {
    }
 
    .space {
-      width: 420px;
+      width: 410px;
+   }
+}
+
+.keys.remove {
+   animation: keys_animation 0.5s forwards;
+}
+
+@keyframes keys_animation {
+   0% {
+      background-color: #1A2B38;
+   }
+
+   100% {
+      background-color: $bg;
    }
 }
 
@@ -134,4 +153,9 @@ body {
 
 .arrow-right {
    background-image: url('../src/img/arrow-right.svg');
+}
+
+.lang {
+   color: #f7f7f7;
+   margin-top: 30px;
 }
