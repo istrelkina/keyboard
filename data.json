@@ -1,0 +1,332 @@
+   {
+      "row1": [
+         {
+            "value": "`",
+            "class": "backquote",
+            "datasetVal": "Backquote"
+         },
+         {
+            "value": "1",
+            "class": "",
+            "datasetVal": "Digit1"
+         },
+         {
+            "value": "2",
+            "class": "",
+            "datasetVal": "Digit2"
+         },
+         {
+            "value": "3",
+            "class": "",
+            "datasetVal": "Digit3"
+         },
+         {
+            "value": "4",
+            "class": "",
+            "datasetVal": "Digit4"
+         },
+         {
+            "value": "5",
+            "class": "",
+            "datasetVal": "Digit5"
+         },
+         {
+            "value": "6",
+            "class": "",
+            "datasetVal": "Digit6"
+         },
+         {
+            "value": "7",
+            "class": "",
+            "datasetVal": "Digit7"
+         },
+         {
+            "value": "8",
+            "class": "",
+            "datasetVal": "Digit8"
+         },
+         {
+            "value": "9",
+            "class": "",
+            "datasetVal": "Digit9"
+         },
+         {
+            "value": "0",
+            "class": "",
+            "datasetVal": "Digit0"
+         },
+         {
+            "value": "-",
+            "class": "",
+            "datasetVal": "Minus"
+         },
+         {
+            "value": "=",
+            "class": "",
+            "datasetVal": "Equal"
+         },
+         {
+            "value": "BackSpace",
+            "class": "backspace",
+            "datasetVal": "Backspace"
+         }
+      ],
+      "row2": [
+         {
+            "value": "Tab",
+            "class": "tab",
+            "datasetVal": "Tab"
+         },
+         {
+            "value": "Q",
+            "class": "",
+            "datasetVal": "KeyQ"
+         },
+         {
+            "value": "W",
+            "class": "",
+            "datasetVal": "KeyW"
+         },
+         {
+            "value": "E",
+            "class": "",
+            "datasetVal": "KeyE"
+         },
+         {
+            "value": "R",
+            "class": "",
+            "datasetVal": "KeyR"
+         },
+         {
+            "value": "T",
+            "class": "",
+            "datasetVal": "KeyT"
+         },
+         {
+            "value": "Y",
+            "class": "",
+            "datasetVal": "KeyY"
+         },
+         {
+            "value": "U",
+            "class": "",
+            "datasetVal": "KeyU"
+         },
+         {
+            "value": "I",
+            "class": "",
+            "datasetVal": "KeyI"
+         },
+         {
+            "value": "O",
+            "class": "",
+            "datasetVal": "KeyO"
+         },
+         {
+            "value": "P",
+            "class": "",
+            "datasetVal": "KeyP"
+         },
+         {
+            "value": "[",
+            "class": "",
+            "datasetVal": "BracketLeft"
+         },
+         {
+            "value": "]",
+            "class": "",
+            "datasetVal": "BracketRight"
+         },
+         {
+            "value": "\\",
+            "class": "backslash",
+            "datasetVal": "Backslash"
+         },
+         {
+            "value": "Del",
+            "class": "del",
+            "datasetVal": "Delete"
+         }
+      ],
+      "row3": [
+         {
+            "value": "CapsLock",
+            "class": "capslock",
+            "datasetVal": "CapsLock"
+         },
+         {
+            "value": "A",
+            "class": "",
+            "datasetVal": "KeyA"
+         },
+         {
+            "value": "S",
+            "class": "",
+            "datasetVal": "KeyS"
+         },
+         {
+            "value": "D",
+            "class": "",
+            "datasetVal": "KeyD"
+         },
+         {
+            "value": "F",
+            "class": "",
+            "datasetVal": "KeyF"
+         },
+         {
+            "value": "G",
+            "class": "",
+            "datasetVal": "KeyG"
+         },
+         {
+            "value": "H",
+            "class": "",
+            "datasetVal": "KeyH"
+         },
+         {
+            "value": "J",
+            "class": "",
+            "datasetVal": "KeyJ"
+         },
+         {
+            "value": "K",
+            "class": "",
+            "datasetVal": "KeyK"
+         },
+         {
+            "value": "L",
+            "class": "",
+            "datasetVal": "KeyL"
+         },
+         {
+            "value": ";",
+            "class": "",
+            "datasetVal": "Semicolon"
+         },
+         {
+            "value": "'",
+            "class": "",
+            "datasetVal": "Quote"
+         },
+         {
+            "value": "Enter",
+            "class": "enter",
+            "datasetVal": "Enter"
+         }
+      ],
+      "row4": [
+         {
+            "value": "Shift",
+            "class": "shift-left",
+            "datasetVal": "ShiftLeft"
+         },
+         {
+            "value": "\\",
+            "class": "",
+            "datasetVal": "IntlBackslash"
+         },
+         {
+            "value": "Z",
+            "class": "",
+            "datasetVal": "KeyZ"
+         },
+         {
+            "value": "X",
+            "class": "",
+            "datasetVal": "KeyX"
+         },
+         {
+            "value": "C",
+            "class": "",
+            "datasetVal": "KeyC"
+         },
+         {
+            "value": "V",
+            "class": "",
+            "datasetVal": "KeyV"
+         },
+         {
+            "value": "B",
+            "class": "",
+            "datasetVal": "KeyB"
+         },
+         {
+            "value": "N",
+            "class": "",
+            "datasetVal": "KeyN"
+         },
+         {
+            "value": "M",
+            "class": "",
+            "datasetVal": "KeyM"
+         },
+         {
+            "value": ",",
+            "class": "",
+            "datasetVal": "Comma"
+         },
+         {
+            "value": ".",
+            "class": "",
+            "datasetVal": "Period"
+         },
+         {
+            "value": "/",
+            "class": "",
+            "datasetVal": "Slash"
+         },
+         {
+            "value": "",
+            "class": "arrow-up",
+            "datasetVal": "ArrowUp"
+         },
+         {
+            "value": "Shift",
+            "class": "shift-right",
+            "datasetVal": "ShiftRight"
+         }
+      ],
+      "row5": [
+         {
+            "value": "Ctrl",
+            "class": "ctrl",
+            "datasetVal": "ControlLeft"
+         },
+         {
+            "value": "Win",
+            "class": "win",
+            "datasetVal": "MetaLeft"
+         },
+         {
+            "value": "Alt",
+            "class": "alt",
+            "datasetVal": "AltLeft"
+         },
+         {
+            "value": " ",
+            "class": "space",
+            "datasetVal": "Space"
+         },
+         {
+            "value": "Ctrl",
+            "class": "ctrl",
+            "datasetVal": "ControlRight"
+         },
+         {
+            "value": "",
+            "class": "arrow-left",
+            "datasetVal": "ArrowLeft"
+         },
+         {
+            "value": "",
+            "class": "arrow-down",
+            "datasetVal": "ArrowDown"
+         },
+         {
+            "value": "",
+            "class": "arrow-right",
+            "datasetVal": "ArrowRight"
+         }
+      ]
+   }
