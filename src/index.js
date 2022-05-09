@@ -2,16 +2,15 @@ const { body } = document;
 const script = document.querySelector('script');
 let keys;
 let textarea;
-let arrLetters;
 let isCapsLock = false;
-let isLangRu = false;
+let lang = 'en';
 const arrLettersEn = Array(26).fill().map((v, i) => String.fromCharCode(i + 65));
 arrLettersEn.push('`');
 const arrLettersRu = Array(32).fill().map((v, i) => String.fromCharCode(i + 192));
 arrLettersRu.push('Ё');
 const arrLang = ['ShiftLeft', 'AltLeft'];
 const setLang = new Set(arrLang);
-let pressed = new Set();
+const pressed = new Set();
 const objLangRu = {
   Backquote: 'Ё',
   KeyQ: 'Й',
@@ -80,9 +79,37 @@ const objLangEn = {
   KeyN: 'N',
   KeyM: 'M',
   Comma: ',',
-  Period: '.'
+  Period: '.',
 };
-
+function setLocalStorage() {
+  localStorage.setItem('lang', lang);
+}
+function getLocalStorage() {
+  if (localStorage.getItem('lang')) lang = localStorage.getItem('lang');
+}
+function changeLang() {
+  if (lang === 'ru') {
+    for (const element of keys) {
+      if (objLangEn[element.dataset.key]) {
+        if (isCapsLock) {
+          element.textContent = objLangRu[element.dataset.key];
+        } else {
+          element.textContent = objLangRu[element.dataset.key].toLowerCase();
+        }
+      }
+    }
+  } else {
+    for (const element of keys) {
+      if (objLangEn[element.dataset.key]) {
+        if (isCapsLock) {
+          element.textContent = objLangEn[element.dataset.key];
+        } else {
+          element.textContent = objLangEn[element.dataset.key].toLowerCase();
+        }
+      }
+    }
+  }
+}
 function showKeyboard(data) {
   const dataArray = [];
   const keyboardWrapper = document.createElement('div');
@@ -134,6 +161,8 @@ function showKeyboard(data) {
     script.before(keyboardWrapper);
     keys = document.querySelectorAll('.keys');
   }
+  getLocalStorage();
+  if (lang === 'ru') changeLang();
 }
 
 async function getData() {
@@ -148,52 +177,56 @@ async function getData() {
 
 (getData());
 
-// event keyboard
-
 function getKeyActive(event) {
-
   if (!textarea.hasFocus) textarea.focus();
   keys.forEach((element) => {
     if (element.dataset.key === event.code) {
       element.classList.add('active');
       if (event.code === 'MetaLeft' || event.code === 'Tab') event.preventDefault();
+      if (element.dataset.key === 'CapsLock') {
+        if (isCapsLock) {
+          isCapsLock = false;
+          element.classList.remove('active');
+
+          for (const el of keys) {
+            if (objLangEn[el.dataset.key]) {
+              el.textContent = el.textContent.toLowerCase();
+            }
+          }
+        } else {
+          isCapsLock = true;
+          for (const el of keys) {
+            if (objLangEn[el.dataset.key]) {
+              el.textContent = el.textContent.toUpperCase();
+            }
+          }
+        }
+      }
     }
   });
   pressed.add(event.code);
-  for (let code of setLang) {
+  for (const code of setLang) {
     if (!pressed.has(code)) {
       return;
     }
   }
   pressed.clear();
-  isLangRu ? isLangRu = false : isLangRu = true;
-
-  if (isLangRu) {
-    keys.forEach((element) => {
-      if (objLangEn[element.dataset.key])
-        if (isCapsLock) {
-          element.textContent = objLangRu[element.dataset.key];
-        } else {
-          element.textContent = objLangRu[element.dataset.key].toLowerCase();
-        }
-    })
+  if (lang === 'en') {
+    lang = 'ru';
   } else {
-    keys.forEach((element) => {
-      if (objLangRu[element.dataset.key])
-        if (isCapsLock) {
-          element.textContent = objLangEn[element.dataset.key];
-        } else {
-          element.textContent = objLangEn[element.dataset.key].toLowerCase();
-        }
-    });
+    lang = 'en';
   }
+  setLocalStorage();
+  changeLang();
 }
 
 function getKeyRemove(event) {
   keys.forEach((element) => {
     if (element.dataset.key === event.code) {
-      element.classList.remove('active');
-      element.classList.add('remove');
+      if (element.dataset.key !== 'CapsLock') {
+        element.classList.remove('active');
+        element.classList.add('remove');
+      }
     }
     setTimeout(() => {
       element.classList.remove('remove');
@@ -204,7 +237,6 @@ function getKeyRemove(event) {
 document.addEventListener('keydown', getKeyActive);
 document.addEventListener('keyup', getKeyRemove);
 
-// event mouse
 const arrSpecial = ['Backspace', 'Tab', 'Delete', 'CapsLock', 'Enter', 'ShiftLeft', 'ArrowUp', 'ShiftRight', 'ControlLeft', 'MetaLeft', 'AltLeft', 'ControlRight', 'ArrowLeft', 'ArrowDown', 'ArrowRight'];
 function printKey(event) {
   keys.forEach((element) => {
@@ -220,21 +252,19 @@ function printKey(event) {
           isCapsLock = false;
           element.classList.remove('active');
 
-          keys.forEach((el) => {
+          for (const el of keys) {
             if (objLangEn[el.dataset.key]) {
-              const newTextContent = el.textContent.toLowerCase();
-              el.textContent = newTextContent;
+              el.textContent = el.textContent.toLowerCase();
             }
-          });
+          }
         } else {
           isCapsLock = true;
           element.classList.add('active');
-          keys.forEach((el) => {
+          for (const el of keys) {
             if (objLangEn[el.dataset.key]) {
-              const newTextContent = el.textContent.toUpperCase();
-              el.textContent = newTextContent;
+              el.textContent = el.textContent.toUpperCase();
             }
-          });
+          }
         }
       }
       if (!isCapsLock) {
